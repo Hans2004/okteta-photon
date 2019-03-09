@@ -1,0 +1,17 @@
+[Desktop Entry]
+Encoding=UTF-8
+Icon=arrow-up
+Type=Service
+ServiceTypes=KPluginInfo
+
+Name=Photon test structure
+Comment=A structure for analyzing photon files
+
+X-KDE-PluginInfo-Author=Hans de Jong
+X-KDE-PluginInfo-Email=pipo2004@gmail.com
+X-KDE-PluginInfo-Name=photon
+X-KDE-PluginInfo-Version=1.0
+X-KDE-PluginInfo-Website=http://www.plugin.org/
+X-KDE-PluginInfo-Category=structure
+X-KDE-PluginInfo-License=LGPL
+X-KDE-PluginInfo-EnabledByDefault=false

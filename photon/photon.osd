@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+  <struct name="header">
+    <array name="unknown" length="8">
+      <primitive name="val" type="char" />
+    </array>
+    <primitive name="bedX" type="float" />
+    <primitive name="bedY" type="float" />
+    <primitive name="bedZ" type="float" />
+    <primitive name="unknown1" type="uint32" />
+    <primitive name="unknown2" type="uint32" />
+    <primitive name="unknown3" type="uint32" />
+    <primitive name="layerHeight" type="float" />
+    <primitive name="expTime" type="float" />
+    <primitive name="expBottom" type="float" />
+    <primitive name="offTime" type="float" />
+    <primitive name="bottomLayers" type="uint32" />
+    <primitive name="resolutionX" type="uint32" />
+    <primitive name="resolutionY" type="uint32" />
+    <pointer name="preview0Addr" type="UInt32">
+      <struct name="PreviewType">
+        <primitive name="resolutionX" type="UInt32" />
+        <primitive name="resolutionY" type="UInt32" />
+        <pointer name="imageAddress" type="uint32">
+          <array name="png" length="function() { return this.parent.parent.dataLength.value; }">
+            <primitive name="byte" type="char"/>
+          </array>
+        </pointer>
+        <primitive name="dataLength" type="UInt32" />
+        <array name="padding" length="4">
+          <primitive name="val" type="uint32" />
+        </array>
+      </struct>
+    </pointer>
+    <pointer name="layerDefsAddr" type="uint32">
+      <array name="layerDefs" length="function() { return this.parent.parent.nrLayers.value; }">
+        <struct name="layerDefsType">
+          <primitive name="layerHeight" type="float" />
+          <primitive name="expTime" type="float" />
+          <primitive name="offTime" type="float" />
+          <pointer name="imageAddress" type="UInt32">
+            <array name="image" length="function() { return this.parent.parent.dataLength2.value; }">
+              <primitive name="byte" type="char" />
+            </array>
+          </pointer>
+          <primitive name="dataLength2" type="UInt32" />
+          <array name="padding2" length="4">
+            <primitive name="val" type="uint32" />
+          </array>
+        </struct>
+      </array>
+    </pointer>
+    <primitive name="nrLayers" type="uint32" />
+    <pointer name="preview0Addr" type="UInt32">
+      <struct name="PreviewType">
+        <primitive name="resolutionX" type="UInt32" />
+        <primitive name="resolutionY" type="UInt32" />
+        <pointer name="imageAddress" type="uint32">
+          <array name="png" length="function() { return this.parent.parent.dataLength.value; }">
+            <primitive name="byte" type="char"/>
+          </array>
+        </pointer>
+        <primitive name="dataLength" type="UInt32" />
+        <array name="padding" length="4">
+          <primitive name="val" type="uint32" />
+        </array>
+      </struct>
+    </pointer>
+    <primitive name="unknown4" type="uint32" />
+    <primitive name="projCastMirror" type="uint32" />
+    <array name="unknown" length="12">
+      <primitive name="padding" type="uint32" />
+    </array>
+    
+  </struct>
+</data>
