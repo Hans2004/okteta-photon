@@ -12,4 +12,4 @@ To use this:
 - In the search text type photon
 - Now you can select the definition file.
 
-![Screenshot](OktetaScreenShot.png.png)
+![Screenshot](OktetaScreenShot.png)
